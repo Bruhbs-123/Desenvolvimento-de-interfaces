@@ -1,0 +1,36 @@
+.row .col {
+    font-size: 10px;
+}
+.green-100{
+    background-color: #ef91ed !important;
+}
+.yellow-100{
+    background-color: #f146ddde !important;
+}
+.yellow-200{
+    background-color: #e860ab !important;
+}
+.red-200{
+    background-color:#f68fc7 !important;
+}
+.purple-200{
+    background-color:#eb6bcd !important;
+}
+.blue-200{
+    background-color:hwb(307 59% 4%) !important;
+}
+.blue-300{
+    background-color:#ec99f4 !important;
+}
+.pink-400{
+    background-color:#fd50c3 !important;
+}
+.green-400{
+    background-color:hsla(326, 70%, 48%, 0.61) !important;
+}
+.blue-100{
+    background-color:#f01985b6 !important;
+}
+.green-200{
+    background-color:#f86eba82 !important;
+}

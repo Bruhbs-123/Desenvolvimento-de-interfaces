@@ -1,0 +1,129 @@
+/* Variáveis de Cores (Dark Mode com Destaque Roxo/Púrpura) */
+:root {
+    --primary-color: #ed02ede5; /* Magenta/Rosa Choque (Destaque principal, similar ao da imagem d0b25c.jpg) */
+    --secondary-color: #FFFFFF; /* Branco (Texto principal) */
+    --dark-color-base: #1a0033; /* Roxo muito escuro/quase preto */
+    --dark-color-gradient-start: #4c004c; /* Roxo escuro */
+    --dark-color-gradient-end: #1a0033; /* Roxo muito escuro */
+    --border-color: #800080; /* Púrpura intermediário */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos Gerais */
+body {
+    /* Fundo degradê roxo/púrpura, igual à imagem d0b2b9.jpg e d0b25c.jpg */
+    background: linear-gradient(135deg, var(--dark-color-gradient-start) 0%, var(--dark-color-gradient-end) 100%);
+    background-attachment: fixed;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    padding: 0;
+}
+
+/* Header (Topo da página) */
+.header-modern {
+    /* Fundo um pouco mais escuro para o cabeçalho, com borda de destaque */
+    background-color: var(--dark-color-base); 
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    font-weight: 200;
+    letter-spacing: 5px;
+    /* Sombra neon suave */
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.4); 
+}
+
+/* Link Voltar ao Hub (Guia) */
+.voltar-hub {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--primary-color) !important;
+    padding: 8px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.voltar-hub:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color-base) !important;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Navegação de Categorias (Âncoras de Navegação) */
+.custom-nav-link {
+    color: var(--secondary-color) !important;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 255, 0.1); /* Fundo roxo transparente */
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.custom-nav-link:hover, .custom-nav-link.active {
+    color: var(--dark-color-base) !important;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
+}
+
+/* Títulos das Seções */
+.section-title {
+    color: var(--primary-color); 
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px !important;
+}
+
+/* Carrossel (Componente Principal - Bootstrap) */
+.custom-carousel {
+    max-width: 500px;
+    border: 3px solid var(--primary-color); /* Borda de destaque roxa */
+    border-radius: 10px;
+    overflow: hidden;
+    /* Sombra roxa para efeito neon/flutuante */
+    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.6); 
+}
+
+.carousel-item img {
+    height: 600px; 
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Audio Player (Estilo Moderno Dark) */
+.audio-modern {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--dark-color-base);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    /* Inverte as cores do controle nativo para dark mode */
+    filter: invert(0.8) hue-rotate(180deg); 
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}

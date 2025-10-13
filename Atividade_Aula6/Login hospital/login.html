@@ -1,0 +1,38 @@
+
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Profissional da Saúde</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="card">
+    <form id="loginForm">
+      <h2>Login do Profissional da Saúde</h2>
+
+      <label for="matricula">Matrícula:</label>
+      <input type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+      <label for="cargo">Cargo:</label>
+      <select id="cargo" name="cargo" required>
+        <option value="" disabled selected>Selecione seu cargo</option>
+        <option value="Medico">Médico</option>
+        <option value="Enfermeiro">Enfermeiro</option>
+        <option value="Farmaceutico">Farmacêutico</option>
+        <option value="Psicologo">Psicólogo</option>
+      </select>
+
+      <button type="submit">Entrar
+      </button>
+
+    <script src ="login.js"></script>
+
+    </form>
+  </div>
+</body>
+</html>
